@@ -16,14 +16,14 @@ import java.util.UUID;
 public class OilInventory extends BaseEntity {
 
     @Builder
-    public OilInventory(UUID id, Integer version, Timestamp createdDate, Timestamp lastModifiedDate, UUID oilId, String barCode, Integer quantityInHand) {
+    public OilInventory(UUID id, Integer version, Timestamp createdDate, Timestamp lastModifiedDate, UUID oilId, String barCode, Integer quantityOnHand) {
         super(id, version, createdDate, lastModifiedDate);
         this.oilId = oilId;
         this.barCode = barCode;
-        this.quantityInHand = quantityInHand;
+        this.quantityOnHand = quantityOnHand;
     }
 
     private UUID oilId;
     private String barCode;
-    private Integer quantityInHand = 0;
+    private Integer quantityOnHand = 0;
 }

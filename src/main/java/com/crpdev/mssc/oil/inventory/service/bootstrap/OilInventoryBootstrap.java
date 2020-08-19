@@ -35,21 +35,21 @@ public class OilInventoryBootstrap implements CommandLineRunner {
                 .builder()
                 .oilId(OIL_1_UUID)
                 .barCode(OIL_1_BARCODE)
-                .quantityInHand(50)
+                .quantityOnHand(50)
                 .build());
 
         oilInventoryRepository.save(OilInventory
                 .builder()
                 .oilId(OIL_2_UUID)
                 .barCode(OIL_2_BARCODE)
-                .quantityInHand(50)
+                .quantityOnHand(50)
                 .build());
 
         oilInventoryRepository.save(OilInventory
                 .builder()
                 .oilId(OIL_2_UUID)
                 .barCode(OIL_2_BARCODE)
-                .quantityInHand(50)
+                .quantityOnHand(50)
                 .build());
 
         log.debug("Loaded Inventory. Record count: " + oilInventoryRepository.count());

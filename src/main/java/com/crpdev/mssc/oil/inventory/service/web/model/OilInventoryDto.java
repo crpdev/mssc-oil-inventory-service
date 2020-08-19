@@ -18,5 +18,5 @@ public class OilInventoryDto {
     private OffsetDateTime createdDate;
     private OffsetDateTime lastModifiedDate;
     private UUID oilId;
-    private Integer quantityInHand;
+    private Integer quantityOnHand;
 }
