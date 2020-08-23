@@ -29,7 +29,7 @@ public class NewInventoryListener {
         log.debug("Got Inventory: " + event.toString());
         oilInventoryRepository.save(OilInventory.builder()
             .oilId(event.getOilDto().getId())
-                .barCode(event.getOilDto().getBarCode())
+                .productCode(event.getOilDto().getProductCode())
                 .quantityOnHand(event.getOilDto().getQuantityOnHand())
                 .build());
     }
