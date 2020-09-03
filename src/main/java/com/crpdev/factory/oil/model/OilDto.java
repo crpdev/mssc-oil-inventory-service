@@ -1,4 +1,4 @@
-package com.crpdev.mssc.oil.inventory.service.web.model;
+package com.crpdev.factory.oil.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

@@ -1,8 +1,8 @@
 package com.crpdev.mssc.oil.inventory.service.web.controller;
 
+import com.crpdev.factory.oil.model.OilInventoryDto;
 import com.crpdev.mssc.oil.inventory.service.repository.OilInventoryRepository;
 import com.crpdev.mssc.oil.inventory.service.web.mapper.OilInventoryMapper;
-import com.crpdev.mssc.oil.inventory.service.web.model.OilInventoryDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

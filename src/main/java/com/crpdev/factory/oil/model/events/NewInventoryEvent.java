@@ -1,6 +1,6 @@
-package com.crpdev.common.events;
+package com.crpdev.factory.oil.model.events;
 
-import com.crpdev.mssc.oil.inventory.service.web.model.OilDto;
+import com.crpdev.factory.oil.model.OilDto;
 import lombok.NoArgsConstructor;
 
 /**

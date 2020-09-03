@@ -1,6 +1,6 @@
 package com.crpdev.mssc.oil.inventory.service.services;
 
-import com.crpdev.common.events.NewInventoryEvent;
+import com.crpdev.factory.oil.model.events.NewInventoryEvent;
 import com.crpdev.mssc.oil.inventory.service.config.JmsConfig;
 import com.crpdev.mssc.oil.inventory.service.domain.OilInventory;
 import com.crpdev.mssc.oil.inventory.service.repository.OilInventoryRepository;

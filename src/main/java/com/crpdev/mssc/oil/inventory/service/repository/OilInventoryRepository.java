@@ -11,4 +11,6 @@ import java.util.UUID;
 public interface OilInventoryRepository extends JpaRepository<OilInventory, UUID> {
 
     List<OilInventory> findAllByOilId(UUID oilId);
+
+    List<OilInventory> findAllByProductCode(String productCode);
 }

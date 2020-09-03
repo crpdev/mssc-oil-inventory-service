@@ -1,7 +1,7 @@
 package com.crpdev.mssc.oil.inventory.service.web.mapper;
 
+import com.crpdev.factory.oil.model.OilInventoryDto;
 import com.crpdev.mssc.oil.inventory.service.domain.OilInventory;
-import com.crpdev.mssc.oil.inventory.service.web.model.OilInventoryDto;
 import org.mapstruct.Mapper;
 
 @Mapper(uses = DateMapper.class)
