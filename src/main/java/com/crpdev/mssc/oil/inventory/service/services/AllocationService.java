@@ -10,4 +10,6 @@ import com.crpdev.factory.oil.model.OilOrderDto;
  **/
 public interface AllocationService {
     Boolean allocateOrder (OilOrderDto oilOrderDto);
+
+    void deAllocateOrder (OilOrderDto oilOrderDto);
 }

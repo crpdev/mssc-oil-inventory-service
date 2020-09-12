@@ -46,6 +46,22 @@ public class AllocationServiceImpl implements AllocationService {
         return totalOrdered.get() == totalAllocated.get();
     }
 
+    @Override
+    public void deAllocateOrder(OilOrderDto oilOrderDto) {
+        log.debug("De-Allocating OrderId: " + oilOrderDto.getId());
+        oilOrderDto.getOilOrderLines().forEach(orderLine -> {
+            OilInventory oilInventory = OilInventory.builder()
+                    .oilId(orderLine.getOilId())
+                    .productCode(orderLine.getProductCode())
+                    .quantityOnHand(orderLine.getQuantityAllocated())
+                    .build();
+
+            final OilInventory savedOilInventory = oilInventoryRepository.saveAndFlush(oilInventory);
+            log.debug("De-Allocated OrderId: " + oilOrderDto.getId() + " > Saved New Inventory: " + savedOilInventory.getId());
+        });
+
+    }
+
     private void allocateOilOrderLine(OilOrderLineDto oilOrderLineDto){
         List<OilInventory> oilInventoryList = oilInventoryRepository.findAllByProductCode(oilOrderLineDto.getProductCode());
         oilInventoryList.forEach(oilInventory -> {
