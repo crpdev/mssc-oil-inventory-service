@@ -36,7 +36,7 @@ public class AllocationListener {
             } else {
                 builder.pendingInventory(true);
             }
-
+            builder.allocationError(false);
         } catch (Exception e){
             log.debug("Allocation failed for Order Id: " + request.getOilOrderDto().getId());
             builder.allocationError(true);

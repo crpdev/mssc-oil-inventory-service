@@ -13,9 +13,9 @@ import java.util.UUID;
 //@Component
 public class OilInventoryBootstrap implements CommandLineRunner {
 
-    public static final String OIL_1_PRODUCTCODE = "0631234200036";
-    public static final String OIL_2_PRODUCTCODE = "0631234300019";
-    public static final String OIL_3_PRODUCTCODE = "0083783375213";
+    public static final String OIL_1_PRODUCTCODE = "8005235079489";
+    public static final String OIL_2_PRODUCTCODE = "4987176014894";
+    public static final String OIL_3_PRODUCTCODE = "4987176014893";
     public static final UUID OIL_1_UUID = UUID.fromString("0a818933-087d-47f2-ad83-2f986ed087eb");
     public static final UUID OIL_2_UUID = UUID.fromString("a712d914-61ea-4623-8bd0-32c0f6545bfd");
     public static final UUID OIL_3_UUID = UUID.fromString("026cc3c8-3a0c-4083-a05b-e908048c1b08");
