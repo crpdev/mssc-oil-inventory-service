@@ -23,6 +23,7 @@ public class OilInventoryController {
 
     @GetMapping("/api/v1/oil/{oilId}/inventory")
     public List<OilInventoryDto> listOilsById(@PathVariable("oilId") UUID oilId){
+        log.debug("Received listing request for Oil Id:" + oilId);
         return oilInventoryRepository.findAllByOilId(oilId)
                 .stream()
                 .map(oilInventoryMapper::oilInventoryToOilInventoryDto)
