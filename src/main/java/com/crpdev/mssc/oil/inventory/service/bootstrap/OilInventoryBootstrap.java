@@ -5,12 +5,13 @@ import com.crpdev.mssc.oil.inventory.service.repository.OilInventoryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
 @Slf4j
 @RequiredArgsConstructor
-//@Component
+@Component
 public class OilInventoryBootstrap implements CommandLineRunner {
 
     public static final String OIL_1_PRODUCTCODE = "8005235079489";
